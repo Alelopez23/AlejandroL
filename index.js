@@ -17,5 +17,21 @@ function medicos() {
     medicos ()
     }
 
+    function turnos() {
+        let nombre = prompt("Atención del DR. Hernandez los dias LUN - JUE - SAB ok?")
+        if (nombre == "ok") {
+            alert("Elija entre LUNES - JUEVES - SABADO " )
+            alert("LUNES 10am - JUEVES 9am - SABADO 12am" )
+            return
+
+
+        } 
+
+        alert("Escribio mal el nombre del Doctor, vuelva a intentar"  )
+        medicos ()
+        }
+    
+
 saludar()
 medicos()
+turnos ()
