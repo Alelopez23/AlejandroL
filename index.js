@@ -27,18 +27,18 @@ function turnos( medico ) {
 
 class precioConsulta {
     constructor(primera, segunda, tercera) {
-        this.primera = primera
-        this.segunda = segunda
-        this.tercera = tercera
-        this.otorgado = false
+        this.primera = primera;
+        this.segunda = segunda;
+        this.tercera = tercera;
+        this.otorgado = false;
 }
 descuentoPrecio(precioDescuento) {
-    this.precio += precioDescuento
+    this.precio += precioDescuento;
 }
 vender() {
-    this.otorgado = true
+    this.otorgado = true;
 }
-disminuirPrecio = (precioDisminuir)
+disminuirPrecio = (precioDisminuir);
 aplicarDescuento = (promoConsulta) => {
     if(precioConsulta === "DESCUENTO20" )
     this.precio -=20
