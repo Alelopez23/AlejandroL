@@ -45,3 +45,4 @@ aplicarDescuento = (promoConsulta) => {
 }
 
 turnos (medicos(saludar()))
+
