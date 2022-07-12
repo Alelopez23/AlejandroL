@@ -1,3 +1,10 @@
+console.dir(document);
+console.dir(document.head);
+console.dir(document.body);
+
+let div = document.getElementById("app");
+let parrafo = document.getElementById("parrafo1");
+
 function saludar() {
 let nombre = prompt("Hola!! ¿Cual es tu nombre?")
 alert("Bienvenidos al consultorio DR.LOPEZ-" + nombre )
@@ -5,8 +12,9 @@ alert("Bienvenidos al consultorio DR.LOPEZ-" + nombre )
 function medicos() { 
     let listNombres = [ "Paz" , "Lio" ] 
 
-    let mensaje = "Con que medico quiere ser atendido "
-    for( nombre in listNombres){
+    let mensaje = "Con que medico quiere ser atendido"
+    for (nombre in listNombres){
+        alert("DR.Lio - DR PAZ" )
         mensaje +=  " Dr " + nombre
         }
 
@@ -64,5 +72,4 @@ aplicarDescuento = (promoConsulta) => {
 let cita = new precioConsulta ()
 
 while (true) turnos(medicos(saludar()),cita)
-
 
